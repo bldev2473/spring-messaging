@@ -1,6 +1,14 @@
 version: '2.1'
 
 services:
+  spring-boot1:
+    image: spring-messaging-hangeul/version1.0
+    hostname: spring-boot1
+    ports:
+      - 8080:8080
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+
   zoo1:
     image: zookeeper:3.4.9
     hostname: zoo1
